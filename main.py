@@ -1,10 +1,8 @@
 import os
-import json
 from dotenv import load_dotenv
 from crewai import Agent, Task, Crew
 from langchain_community.llms import OpenAI
 from langchain_community.chat_models import ChatOpenAI
-import datetime
 
 # Load environment variable
 load_dotenv()
