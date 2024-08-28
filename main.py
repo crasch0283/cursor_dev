@@ -8,7 +8,7 @@ from langchain_community.chat_models import ChatOpenAI
 load_dotenv()
 
 # Initialize the OpenAI language model
-llm = ChatOpenAI(model_name="gpt-4o", api_key=os.getenv("OPENAI_API_KEY"), temperature=0.7)
+llm = ChatOpenAI(model="gpt-4o", api_key=os.getenv("OPENAI_API_KEY"), temperature=0.3)
 
 # Define agents
 financial_analyst = Agent(
